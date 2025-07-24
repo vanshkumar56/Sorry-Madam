@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, My Love ❤️</title>
+ <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <div class="floating-hearts"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="main-title">I'm Sorry, My Love 💕</h1>
+            <p class="subtitle">Please forgive me... you mean everything to me</p>
+        </div>
+
+        <div class="content-section">
+            <p class="apology-text">
+                My dearest love, I know I messed up, and I can't express how truly sorry I am. 
+                Every moment since then has been filled with regret, and I can't stop thinking about 
+                how much I've hurt you. You are the most precious thing in my life, and I never 
+                want to be the cause of your pain again.
+            </p>
+
+            <div class="photo-gallery">
+                <div class="photo-card">
+                    <img src="https://picsum.photos/400/300?random=1" alt="Happy couple">
+                    <div class="photo-caption">Remember our first date? ❤️</div>
+                </div>
+                <div class="photo-card">
+                    <img src="https://picsum.photos/400/300?random=2" alt="Romantic moment">
+                    <div class="photo-caption">You always make me smile 😊</div>
+                </div>
+                <div class="photo-card">
+                    <img src="https://picsum.photos/400/300?random=3" alt="Together">
+                    <div class="photo-caption">We're perfect together 💑</div>
+                </div>
+            </div>
+
+            <div class="promises-list">
+                <h3 style="text-align: center; color: #8B4B8B; margin-bottom: 20px;">My Promises to You:</h3>
+                <div class="promise-item">
+                    <span class="promise-icon">💖</span>
+                    <span>I promise to listen to you more carefully and value your feelings</span>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">🌟</span>
+                    <span>I promise to be more thoughtful and considerate in everything I do</span>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">🤗</span>
+                    <span>I promise to communicate better and never let misunderstandings hurt us</span>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">💝</span>
+                    <span>I promise to show you every day how much you mean to me</span>
+                </div>
+                <div class="promise-item">
+                    <span class="promise-icon">🌹</span>
+                    <span>I promise to love you more fiercely and protect our beautiful relationship</span>
+                </div>
+            </div>
+
+            <p class="love-message">
+                You are my sunshine, my happiness, and my heart. 
+                Without you, nothing makes sense. Please give me another chance to make things right. 💕
+            </p>
+
+            <div class="button-container">
+                <h3 style="color: #8B4B8B; margin-bottom: 20px; font-size: 1.4rem;">Did you forgive me? 🥺</h3>
+                <button class="forgive-btn yes-btn" onclick="showForgiveness()" style="margin-right: 20px; background: linear-gradient(135deg, #00C851, #00A844); border: 2px solid rgba(0, 200, 81, 0.5); box-shadow: 0 0 15px rgba(0, 200, 81, 0.3);">
+                    Yes ❤️
+                </button>
+                <button class="forgive-btn no-btn" id="noBtn" onclick="handleNo()" style="background: linear-gradient(135deg, #FF4444, #CC0000); border: 2px solid rgba(255, 68, 68, 0.5); box-shadow: 0 0 15px rgba(255, 68, 68, 0.3);">
+                    No 💔
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yes Modal -->
+    <div id="forgivenessModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Thank You! 🥺❤️</h2>
+            <p>You've just made me the happiest person alive! I promise to never hurt you again. 
+            I love you more than words can express, and I'll spend every day showing you just how much you mean to me.</p>
+            <p style="margin-top: 20px; font-size: 1.3rem;">💕 I LOVE YOU SO MUCH! 💕</p>
+            <button onclick="transformPage()" style="margin-top: 20px; background: linear-gradient(135deg, #FFD700, #FFA500); color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer; font-size: 1.1rem;">
+                ✨ Let's Celebrate Our Love! ✨
+            </button>
+        </div>
+    </div>
+
+    <!-- Beautiful Love Scene -->
+    <div id="loveScene" class="love-scene">
+        <div class="stars"></div>
+        <div class="moon"></div>
+        <div class="love-content">
+            <h1 class="love-title">Our Love Story Continues... 💕</h1>
+            <div class="love-garden">
+                <div class="flower-field">
+                    <div class="flower" style="--delay: 0s; --x: 10%; --y: 80%;"></div>
+                    <div class="flower" style="--delay: 0.5s; --x: 25%; --y: 70%;"></div>
+                    <div class="flower" style="--delay: 1s; --x: 40%; --y: 85%;"></div>
+                    <div class="flower" style="--delay: 1.5s; --x: 60%; --y: 75%;"></div>
+                    <div class="flower" style="--delay: 2s; --x: 75%; --y: 82%;"></div>
+                    <div class="flower" style="--delay: 2.5s; --x: 90%; --y: 78%;"></div>
+                </div>
+                <div class="couple-silhouette">
+                    <div class="person person1"></div>
+                    <div class="person person2"></div>
+                    <div class="shared-heart">💖</div>
+                </div>
+            </div>
+            <div class="love-message-final">
+                <p>Thank you for forgiving me, my love. You've filled my world with colors again! 🌈</p>
+                <p>Together, we can overcome anything. Our love is stronger than any storm. 💪❤️</p>
+            </div>
+            <div class="floating-words">
+                <span style="--delay: 0s; --x: 20%; --y: 30%;">Forever</span>
+                <span style="--delay: 1s; --x: 80%; --y: 25%;">Together</span>
+                <span style="--delay: 2s; --x: 15%; --y: 60%;">Always</span>
+                <span style="--delay: 3s; --x: 85%; --y: 55%;">Yours</span>
+                <span style="--delay: 4s; --x: 50%; --y: 20%;">Eternal</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- No Modal -->
+    <div id="noModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeNoModal()">&times;</span>
+            <h2 id="noModalTitle">Please don't say no! 😭💔</h2>
+            <p id="noModalMessage">My heart is breaking into a million pieces... I'm so sorry for hurting you, my love. 😢</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
