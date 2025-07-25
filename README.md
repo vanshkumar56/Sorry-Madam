@@ -1,6 +1,4 @@
-Based on your request, here's the complete README.md code that you can copy and paste directly into your GitHub repository:
 
-text
 # Sorry Pasandida Aurat 💔
 
 A heartfelt digital apology project dedicated to saying sorry to someone special.
